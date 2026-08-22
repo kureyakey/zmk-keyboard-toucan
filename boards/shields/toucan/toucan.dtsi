@@ -104,9 +104,6 @@
         status = "disabled";
     };
 
-    &adc {
-    status = "okay";
-    };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
@@ -122,6 +119,10 @@
         triggers-per-rotation = <10>;
     };
 };
+
+&adc {
+    status = "okay";
+    };
 
 / {
     split_inputs {
