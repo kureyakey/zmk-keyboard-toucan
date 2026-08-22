@@ -32,6 +32,10 @@ nice_view_spi: &spi0 {
     status = "disabled";
 };
 
+&non_lipo_battery {
+    io-channels = <&adc 2>;
+};
+
 &kscan0 {
     col-gpios
     = <&gpio0 9 GPIO_ACTIVE_HIGH>
