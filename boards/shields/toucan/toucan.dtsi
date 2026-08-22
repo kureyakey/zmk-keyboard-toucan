@@ -8,6 +8,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
+        zmk,battery = &non_lipo_battery;
         //zmk,physical-layout = &physical_layout0;
     };
 
