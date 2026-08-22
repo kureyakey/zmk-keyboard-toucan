@@ -10,10 +10,18 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: geeksville
       url-base: https://github.com/geeksville
+    - name: kureyakey
+      url-base: https://github.com/kureyakey
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
+      
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-feature-non-lipo-battery-management
+      remote: kureyakey
+      revision: main
     - name: cirque-input-module
       remote: geeksville
       revision: toucan
